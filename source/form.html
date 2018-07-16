@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js" async></script>
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видио</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+      <div class="header-main__panel">
+        <a class="header-main__link"  href="index.html">
+          <img class="header-main__img" src="#" alt="Логотип">
+        </a>
+      </div>
+    </header>
+    <main class="content-main">
+      <h1 class="content-main__title">Оставте свой отзыв</h1>
+      <p class="content-main__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="registration">
+        <form action="https://echo.htmlacademy.ru" class="registration__form">
+          <fieldset class="user-data">
+            <label class="user-data__label" for="user-data__name">
+              Имя*:
+            </label>
+            <input class="user-data__input" type="text" id="user-data__name" name="name" placeholder="Петр" required>
+            <label class="user-data__label" for="user-data__surname">
+              Фамилия*:
+            </label>
+            <input class="user-data__input" type="text" id="user-data__surname" name="surname" placeholder="Иванов" required>
+            <label class="user-data__label" for="user-data__middle-name">
+              Отчество:
+            </label>
+            <input class="user-data__input" type="text" id="user-data__middle-name" name="middle-name" placeholder="Александрович">
+          </fieldset>
+          <fieldset class="user-data user-data--network">
+            <legend class="user-data__title">
+              <span class="user-data__slogan">
+                Контактная информация:
+              </span>
+            </legend>
+            <div class="user-data__wrapper user-data__wrapper--network">
+              <label class="user-data__label-mobile" for="user-data__phone">
+                Контактный телефон*:
+              </label>
+              <div class="user-data__input-wrap user-data__input-wrap--phone">
+                <input class="user-data__input  user-data__input--network" type="tel" name="tel"  id="user-data__phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+              </div>
+              <label class="user-data__label-mobile" for="user-data__address">
+                Электронная почта*:
+              </label>
+              <div class="user-data__input-wrap user-data__input-wrap--email">
+                <input class="user-data__input  user-data__input--network" type="email" name="email" id="user-data__address" placeholder="Введите e-mail" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="impressions">
+            <legend class="impressions__title">
+              <span class="impressions__slogan">
+                Ваше общее впечатление:
+              </span>
+            </legend>
+            <input class="impressions__input visually-hidden" type="radio" name="impressions-name" value="IOS" id="rd1" checked>
+            <label class="impressions__label" for="rd1">
+              <span class="impressions__desk">Скорее положительное</span>
+            </label>
+            <input class="impressions__input visually-hidden" type="radio" name="impressions-name" value="Android" id="rd2">
+            <label class="impressions__label" for="rd2">
+              <span class="impressions__desk">Скорее отрицательное</span>
+            </label>
+            <input class="impressions__input visually-hidden" type="radio" name="impressions-name" value="Phone" id="rd3">
+            <label class="impressions__label" for="rd3">
+              <span class="impressions__desk">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
+          <fieldset class="place">
+            <legend class="place__title">
+              <span class="place__slogan">
+                посещенные достопримечательности:
+              </span>
+            </legend>
+            <div class="place__wrapper">
+              <input class="place__input visually-hidden" type="checkbox" name="record1" id="chx1" checked>
+              <label class="place__label" for="chx1">
+                <span class="place__desk">Мост дьявола</span>
+              </label>
+              <input class="place__input visually-hidden" type="checkbox" name="record2" id="chx2" checked>
+              <label class="place__label" for="chx2">
+                <span class="place__desk">Гора-Колокол</span>
+              </label>
+              <input class="place__input visually-hidden" type="checkbox" name="record3" id="chx3">
+              <label class="place__label" for="chx3">
+                <span class="place__desk">Слайд-парк</span>
+              </label>
+              <input class="place__input visually-hidden" type="checkbox" name="record4" id="chx4">
+              <label class="place__label" for="chx4">
+                <span class="place__desk">Красные скалы</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="review">
+            <legend class="review__title">
+              <span class="review__slogan">
+                Опишите свои эмоции:
+              </span>
+            </legend>
+            <textarea class="review__textarea" name="review" id="review__emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="registration__btn  btn-contest" type="submit">Отправить отзыв</button>
+        </form>
+      </div>
+
+    </main>
+    <footer class="footer-main">
+     <img class="footer-main__img" src="http://placehold.it/320x350" width="560" height="222" alt="Карта">
+     <div class="additional-data">
+       <div class="additional-data__wrap"><span class="visually-hidden">Декоративный элемент</span></div>
+       <ul class="additional-data__list">
+         <li class="additional-data__item">
+           <a class="additional-data__link" href=""><span class="visually-hidden">twitter</span></a>
+         </li>
+         <li class="additional-data__item">
+           <a class="additional-data__link" href=""><span class="visually-hidden">facebook</span></a>
+         </li>
+         <li class="additional-data__item">
+           <a class="additional-data__link" href=""><span class="visually-hidden">youtube</span></a>
+         </li>
+       </ul>
+       <div class="copyright">
+         <p class="copyright__text">Разработано</p>
+         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__img copyright__img--form" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+            <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+         </a>
+       </div>
+     </div>
+   </footer>
+
+  </body>
+</html>

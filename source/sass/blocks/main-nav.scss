@@ -1,0 +1,20 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  text-align: center;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-color;
+}

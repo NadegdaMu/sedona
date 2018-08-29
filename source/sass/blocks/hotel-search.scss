@@ -1,0 +1,28 @@
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search__slogan {
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.hotel-search__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.hotel-search__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $base-color;
+  background-color: $base-background;
+}

@@ -1,0 +1,23 @@
+.specific-life__wrapper {
+  background-color: $base-background;
+  color: $base-color;
+  text-transform: uppercase;
+}
+
+.specific-life__list {
+  @include list-reset;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.specific-life__title {
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.specific-life__text {
+  font-size: 14px;
+  line-height: 21px;
+}

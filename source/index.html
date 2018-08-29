@@ -4,40 +4,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/picturefill.js" async></script>
   </head>
   <body>
-   <header class="header-main">
-     <h1 class="visually-hidden">Туристический сайт одного города!</h1>
-     <nav class="main-nav">
-       <ul class="main-nav__list">
-         <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-         <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видио</a></li>
-         <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
-         <li class="main-nav__item"><a class="main-nav__link" href="#">HTML ACADEMY</a></li>
-       </ul>
-     </nav>
-     <div class="header-main__panel">
-       <a class="header-main__link"  href="index.html">
-         <img class="header-main__img" src="#" alt="Логотип">
-       </a>
-     </div>
-   </header>
+    <header class="header-main">
+      <h1 class="visually-hidden">Туристический сайт одного города!</h1>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видио</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+      <div class="header-main__panel">
+        <div class="container">
+          <a class="header-main__link"  href="index.html">
+            <img class="header-main__img header-main__img--logo" src="img/logo-sedona-desktop.svg" alt="Логотип">
+            <img class="header-main__img" src="img/text-sedona-index.svg" alt="Логотип">
+          </a>
+        </div>
+      </div>
+    </header>
 
-   <main class="content-main">
-     <section class="specific">
-       <h2 class="specific__title visually-hidden">Специфический город</h2>
-       <p class="specific__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
-       <p class="specific__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
-       <section class="specific-life">
-         <div class="specific-life__wrapper">
-           <h3 class="specific-life__title">Настоящий городок</h3>
-           <span class="specific-life__desk">— №1 —</span>
-           <p class="specific-life__text">Седона не атракцион для туристов, там течет своя жизнь</p>
-         </div>
-         <img class="specific-life__img" src="http://placehold.it/320x261" alt="Фотография одно из видов города">
+    <main class="content-main">
+      <section class="specific">
+        <h2 class="specific__title visually-hidden">Специфический город</h2>
+        <div class="container">
+          <p class="specific__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
+          <p class="specific__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+      <section class="specific-life">
+        <div class="specific-life__wrapper">
+          <div class="container">
+            <h3 class="specific-life__title">Настоящий городок</h3>
+            <span class="specific-life__desk">— №1 —</span>
+            <p class="specific-life__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+          </div>
+        </div>
+        <img class="specific-life__img" src="img/main-city-mobile@1x.jpg" alt="Фотография одно из видов города">
+        <div class="container">
           <ul class="specific-life__list">
             <li class="specific-life__item">
               <h4 class="specific-life__title">Жилье</h4>
@@ -52,69 +61,83 @@
               <p class="specific-life__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </li>
           </ul>
-       </section>
-       <section class="specific-nature">
-         <div class="specific-nature__wrapper">
-           <h3 class="specific-nature__title">Там есть мост дьявола</h3>
-           <span class="specific-nature__desk">— №2 —</span>
-           <p class="specific-nature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-         </div>
-         <img class="specific-nature__img" src="http://placehold.it/320x261" alt="Фотография пейзажа каньона">
-       </section>
-       <section class="specific-places">
-         <div class="specific-places__wrapper">
-           <h3 class="specific-places__title">Небольшая площадь</h3>
-           <span class="specific-places__desk">— №3 —</span>
-           <p class="specific-places__text">Все интересные места находятся очень близко</p>
-         </div>
-       </section>
-       <section class="specific-road">
-         <div class="specific-road__wrapper">
-           <h3 class="specific-road__title">Красивая дорога</h3>
-           <span class="specific-road__desk">— №4 —</span>
-           <p class="specific-road__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-         </div>
-       </section>
-       <section class="specific-tourists">
-         <div class="specific-tourists__wrapper">
-           <h3 class="specific-tourists__title">Мало туристов</h3>
-           <span class="specific-tourists__desk">— №5 —</span>
-           <p class="specific-tourists__text">Большинство едет в гранд каньон и толпится там</p>
-         </div>
-       </section>
-     </section>
-     <section class="hotel-search">
-       <h2 class="hotel-search__title visually-hidden">Поиск гостиницы</h2>
-       <span class="hotel-search__slogan">Заинтересовались?</span>
-       <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-       <a class="hotel-search__link">Найти гостиницу</a>
-     </section>
-   </main>
+        </div>
+      </section>
+      <section class="specific-nature">
+        <div class="specific-nature__wrapper">
+          <div class="container">
+            <h3 class="specific-nature__title">Там есть мост дьявола</h3>
+            <span class="specific-nature__desk">— №2 —</span>
+            <p class="specific-nature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+        </div>
+        <img class="specific-nature__img" src="img/photo-bridge-mobile@1x.jpg" alt="Фотография пейзажа каньона">
+      </section>
+      <section class="specific-places">
+        <div class="specific-places__wrapper">
+          <div class="container">
+            <h3 class="specific-places__title">Небольшая площадь</h3>
+            <span class="specific-places__desk">— №3 —</span>
+            <p class="specific-places__text">Все интересные места находятся очень близко</p>
+          </div>
+        </div>
+      </section>
+      <section class="specific-road">
+        <div class="specific-road__wrapper">
+          <div class="container">
+            <h3 class="specific-road__title">Красивая дорога</h3>
+            <span class="specific-road__desk">— №4 —</span>
+            <p class="specific-road__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </div>
+      </section>
+      <section class="specific-tourists">
+        <div class="specific-tourists__wrapper">
+          <div class="container">
+            <h3 class="specific-tourists__title">Мало туристов</h3>
+            <span class="specific-tourists__desk">— №5 —</span>
+            <p class="specific-tourists__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+      <section class="hotel-search">
+        <div class="container">
+          <h2 class="hotel-search__title visually-hidden">Поиск гостиницы</h2>
+          <p class="hotel-search__text">
+            <span class="hotel-search__slogan">Заинтересовались?</span>
+          </p>
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="hotel-search__link">Найти гостиницу</a>
+        </div>
+      </section>
+    </main>
 
-   <footer class="footer-main">
-     <img class="footer-main__img" src="http://placehold.it/320x350" width="560" height="222" alt="Карта">
-     <div class="additional-data">
-       <div class="additional-data__wrap"><span class="visually-hidden">Декоративный элемент</span></div>
-       <ul class="additional-data__list">
-         <li class="additional-data__item">
-           <a class="additional-data__link" href=""><span class="visually-hidden">twitter</span></a>
-         </li>
-         <li class="additional-data__item">
-           <a class="additional-data__link" href=""><span class="visually-hidden">facebook</span></a>
-         </li>
-         <li class="additional-data__item">
-           <a class="additional-data__link" href=""><span class="visually-hidden">youtube</span></a>
-         </li>
-       </ul>
-       <div class="copyright">
-         <p class="copyright__text">Разработано</p>
-         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__img copyright__img--form" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
-            <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
-         </a>
-       </div>
-     </div>
-   </footer>
+    <footer class="footer-main">
+      <img class="footer-main__img" src="img/bg-map-mobile@1x.jpg" alt="Карта">
+      <div class="container">
+        <div class="additional-data">
+          <div class="additional-data__wrap"><span class="visually-hidden">Декоративный элемент</span></div>
+          <ul class="additional-data__list">
+            <li class="additional-data__item">
+              <a class="additional-data__link" href=""><span class="visually-hidden">twitter</span></a>
+            </li>
+            <li class="additional-data__item">
+              <a class="additional-data__link" href=""><span class="visually-hidden">facebook</span></a>
+            </li>
+            <li class="additional-data__item">
+              <a class="additional-data__link" href=""><span class="visually-hidden">youtube</span></a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__img copyright__img--form" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+              <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>

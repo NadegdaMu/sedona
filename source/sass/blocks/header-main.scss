@@ -1,0 +1,17 @@
+.header-main {
+  color: $base-color;
+  background-color: $base-background;
+}
+
+.header-main__panel {
+  height: 445px;
+  background-color: $base-color;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+}
+
+.header-main__img--logo {
+  margin-left: 45px;
+}

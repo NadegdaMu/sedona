@@ -1,0 +1,22 @@
+.specific-nature__wrapper {
+  color: $base-color;
+  background-color: $base-background;
+}
+
+.specific-nature__img {
+  width: 100%;
+  position: relative;
+  top: -15px;
+}
+
+.specific-nature__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.specific-nature__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
